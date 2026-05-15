@@ -1,53 +1,58 @@
 body{
 
-background:#f4f4f4;
-font-family:'Playfair Display', serif;
+background:#f3f3f3;
+font-family:Georgia, serif;
 text-align:center;
-
 margin:0;
-padding:40px;
+padding:0;
 
 }
 
-.container{
+/* TITULO */
 
-max-width:900px;
-margin:auto;
+.titulo{
 
-}
-
-h1{
-
-font-size:42px;
 font-style:italic;
-line-height:1.4;
+margin-top:40px;
+font-size:34px;
 
 }
+
+/* TOPO */
 
 .topo{
 
 display:flex;
-align-items:center;
 justify-content:center;
+align-items:center;
 gap:40px;
-
-margin-top:20px;
+margin-top:30px;
 
 }
 
+/* IMAGENS */
+
 .gatinho-flor{
 
-width:120px;
+width:140px;
 
 }
 
 .estrelas{
 
-width:450px;
+width:480px;
 
 }
 
-.tempo-texto{
+.gatinho-carta{
+
+width:95px;
+
+}
+
+/* TEXTO */
+
+.texto{
 
 margin-top:50px;
 font-size:22px;
@@ -55,12 +60,14 @@ font-style:italic;
 
 }
 
-#contador{
+.contador{
 
-font-size:22px;
+font-size:20px;
 margin-top:10px;
 
 }
+
+/* CARTINHAS */
 
 .cartinhas{
 
@@ -68,15 +75,15 @@ display:flex;
 align-items:center;
 justify-content:center;
 gap:20px;
-
-margin-top:70px;
+margin-top:60px;
 
 }
 
 .cartinhas h2{
 
-font-size:80px;
+font-size:70px;
 font-style:italic;
+margin:0;
 
 }
 
@@ -85,43 +92,41 @@ font-style:italic;
 font-size:70px;
 text-decoration:none;
 color:black;
+cursor:pointer;
 
 }
 
-.gatinho-carta{
+/* SUBTEXTO */
 
-width:90px;
-
-}
-
-.instrucao{
+.subtexto{
 
 margin-top:20px;
-font-size:26px;
 font-style:italic;
+font-size:20px;
 
 }
+
+/* SENTIMENTOS */
 
 .sentimentos{
 
 display:flex;
 justify-content:center;
 gap:60px;
-
-margin-top:30px;
+margin-top:40px;
 
 }
 
-.sentimento{
+.sentimento h3{
 
 font-size:36px;
 font-style:italic;
+margin-bottom:10px;
 
 }
 
 .sentimento img{
 
 width:90px;
-margin-top:10px;
 
 }
