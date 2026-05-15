@@ -5,65 +5,93 @@
 
 <meta charset="UTF-8">
 
+<title>Nosso site</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 
-<title>Cartinhas</title>
-
 </head>
+
 
 <body>
 
-<div class="container">
+<h1>Oioi, meu amor.</h1>
 
-<h1>cartinhas <a href="secreto.html">⭐</a></h1>
+<h2>Seja bem-vinda ao nosso site!</h2>
 
-<div class="contador">
-estamos juntas há
-<br>
-<span id="contador"></span>
-</div>
 
-<div class="grid">
+<div class="topo">
 
-<a href="triste.html" class="card">
-<h3>Triste</h3>
-<img src="gatinho-triste.jpeg">
-</a>
-
-<a href="feliz.html" class="card">
-<h3>Feliz</h3>
-<img src="gatinho-feliz.jpeg">
-</a>
-
-<a href="saudade.html" class="card">
-<h3>Saudade</h3>
-<img src="gatinho-saudade.jpeg">
-</a>
-
-<a href="semsono.html" class="card">
-<h3>Sem sono</h3>
-<img src="gatinho-semsono.jpeg">
-</a>
-
-</div>
-
-<div class="decoracao">
-
-<img src="gatinho-flor.jpeg" class="gato-esquerda">
+<img src="gatinho-flor.jpeg" class="gatinho-flor">
 
 <img src="estrelas.jpeg" class="estrelas">
 
 </div>
 
+
+<p class="texto-tempo">
+Minha vida mudou desde que te conheci, há aproximadamente:
+</p>
+
+
+<p class="contador">
+<strong id="contador"></strong>
+</p>
+
+
+<h1 class="titulo-cartinhas">☆. Cartinhas</h1>
+
+<p class="subtitulo">
+→ Abra quando estiver se sentindo:
+</p>
+
+
+
+<div class="sentimentos">
+
+<a href="triste.html" class="sentimento">
+
+<h2>Triste</h2>
+
+<img src="gatinho-triste.jpeg">
+
+</a>
+
+
+<a href="feliz.html" class="sentimento">
+
+<h2>Feliz</h2>
+
+<img src="gatinho-feliz.jpeg">
+
+</a>
+
+
+<a href="saudade.html" class="sentimento">
+
+<h2>Saudade</h2>
+
+<img src="gatinho-saudade.jpeg">
+
+</a>
+
+
+<a href="semsono.html" class="sentimento">
+
+<h2>Sem sono</h2>
+
+<img src="gatinho-semsono.jpeg">
+
+</a>
+
 </div>
 
-<script>
+
 
 <script>
 
-const dataInicio = new Date("2023-01-01T00:00:00"); // coloque a data de vocês aqui
+const dataInicio = new Date("2023-08-16T00:00:00"); // MUDE PARA A DATA DE VOCÊS
 
 function atualizarContador(){
 
@@ -89,4 +117,11 @@ segundos + " segundos";
 
 setInterval(atualizarContador, 1000);
 
+atualizarContador();
+
 </script>
+
+
+</body>
+
+</html>
