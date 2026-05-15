@@ -1,132 +1,135 @@
 body{
 
-background:#f3f3f3;
-font-family:Georgia, serif;
-text-align:center;
-margin:0;
-padding:0;
+background:#f5f5f5;
 
-}
-
-/* TITULO */
-
-.titulo{
+font-family:'Lobster', cursive;
 
 font-style:italic;
-margin-top:40px;
-font-size:34px;
+
+text-align:center;
+
+margin:0;
+
+padding:40px;
 
 }
 
-/* TOPO */
+
+h1{
+
+font-size:48px;
+
+margin:10px;
+
+}
+
+
+h2{
+
+font-size:36px;
+
+margin:10px;
+
+}
+
 
 .topo{
 
 display:flex;
+
 justify-content:center;
+
 align-items:center;
+
 gap:40px;
-margin-top:30px;
+
+margin-top:20px;
 
 }
 
-/* IMAGENS */
 
 .gatinho-flor{
 
-width:140px;
+width:150px;
 
 }
+
 
 .estrelas{
 
-width:480px;
+width:320px;
 
 }
 
-.gatinho-carta{
 
-width:95px;
+.texto-tempo{
 
-}
+margin-top:40px;
 
-/* TEXTO */
-
-.texto{
-
-margin-top:50px;
-font-size:22px;
-font-style:italic;
+font-size:28px;
 
 }
+
 
 .contador{
 
-font-size:20px;
+font-size:32px;
+
 margin-top:10px;
 
 }
 
-/* CARTINHAS */
 
-.cartinhas{
+.titulo-cartinhas{
 
-display:flex;
-align-items:center;
-justify-content:center;
-gap:20px;
+font-size:70px;
+
 margin-top:60px;
 
 }
 
-.cartinhas h2{
 
-font-size:70px;
-font-style:italic;
-margin:0;
+.subtitulo{
 
-}
+font-size:30px;
 
-.estrela{
-
-font-size:70px;
-text-decoration:none;
-color:black;
-cursor:pointer;
+margin-top:10px;
 
 }
 
-/* SUBTEXTO */
-
-.subtexto{
-
-margin-top:20px;
-font-style:italic;
-font-size:20px;
-
-}
-
-/* SENTIMENTOS */
 
 .sentimentos{
 
 display:flex;
+
 justify-content:center;
-gap:60px;
+
+gap:70px;
+
 margin-top:40px;
 
 }
 
-.sentimento h3{
 
-font-size:36px;
-font-style:italic;
-margin-bottom:10px;
+.sentimento{
+
+text-decoration:none;
+
+color:black;
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
 
 }
 
+
 .sentimento img{
 
-width:90px;
+width:120px;
+
+margin-top:10px;
 
 }
