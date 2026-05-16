@@ -1,3 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interativo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="menu-icon" onclick="toggleMenu()">☆</div>
+
+<div id="menu" class="menu">
+<a href="index.html">Início</a>
+<a href="poemas.html">Poemas</a>
+<a href="mensagens.html">Mensagens</a>
+<a href="interativo.html">Interativo</a>
+</div>
+
 <h1>☆. Interativo</h1>
 
-<p>Página totalmente interativa!.</p>
+<p>Essa página é totalmente interativa.</p>
+
+<script>
+function toggleMenu() {
+  var menu = document.getElementById("menu");
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
+}
+</script>
+
+</body>
+</html>
