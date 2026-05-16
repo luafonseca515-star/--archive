@@ -118,6 +118,5 @@ background-color:#ffffff;
 
 .banner {
   width: 100%;
-  max-height: 200px;
-  object-fit: contain;
+  height: auto;
 }
