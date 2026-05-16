@@ -158,3 +158,16 @@ p{
 font-size:22px;
 margin:40px;
 }
+
+@media (max-width: 600px) {
+
+p{
+font-size:28px;
+margin:30px;
+}
+
+a{
+font-size:20px;
+}
+
+}
