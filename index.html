@@ -18,7 +18,7 @@
 
 
 <body>
-
+<div class="stars" id="stars"></div>
  <div class="menu-icon" onclick="toggleMenu()">
 ★-𝓶𝓮𝓷𝓾
 </div>
@@ -137,7 +137,28 @@ function toggleMenu() {
   }
 }
 </script>
+<script>
 
+const starsContainer = document.getElementById("stars");
+
+const estrelas = ["★","✦","✧","⋆","☆"];
+
+for(let i=0; i<40; i++){
+
+let star = document.createElement("div");
+star.classList.add("star");
+
+star.innerHTML = estrelas[Math.floor(Math.random()*estrelas.length)];
+
+star.style.left = Math.random()*100 + "vw";
+star.style.fontSize = (10 + Math.random()*20) + "px";
+star.style.animationDuration = (4 + Math.random()*6) + "s";
+
+starsContainer.appendChild(star);
+
+}
+
+</script>
 </body>
 
 </html>
