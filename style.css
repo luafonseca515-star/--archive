@@ -299,7 +299,10 @@ transform:translateY(-50px);
 to{
 transform:translateY(110vh);
 }
-
+#stars-aniversario div{
+z-index:-1;
+color:#ffb6d9;
+}
 }
 }
 }
