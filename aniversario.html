@@ -12,9 +12,39 @@
 <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
 </head>
+<script>
 
+const stars = document.getElementById("stars");
+
+for(let i = 0; i < 30; i++){
+
+const star = document.createElement("div");
+
+star.innerHTML = "⭐";
+
+star.style.position = "fixed";
+star.style.left = Math.random() * 100 + "vw";
+star.style.top = "-20px";
+
+star.style.fontSize =
+(Math.random() * 10 + 10) + "px";
+
+star.style.animation =
+`fall ${Math.random() * 5 + 5}s linear infinite`;
+
+star.style.animationDelay =
+Math.random() * 5 + "s";
+
+star.style.pointerEvents = "none";
+
+stars.appendChild(star);
+
+}
+
+</script>
+  
 <body>
-
+<div id="stars"></div>
 <div class="menu-icon" onclick="toggleMenu()">☆</div>
 
 <div id="menu" class="menu">
