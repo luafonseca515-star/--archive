@@ -1,1 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.5">
+
+<title>?</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="conteudo"></div>
+
+<script>
+
+const agora = new Date();
+
+const liberado =
+agora.getDate() === 10 &&
+agora.getMonth() === 5;
+
+const conteudo =
+document.getElementById("conteudo");
+
+if(liberado){
+
+conteudo.innerHTML = `
+<h1>☆</h1>
+
+<p>
+Digite a senha para acessar sua surpresa.
+</p>
+
+<input type="password" id="senha">
+
+<button onclick="verificarSenha()">
+Entrar
+</button>
+
+<div id="resultado"></div>
+`;
+
+}else{
+
+conteudo.innerHTML = `
+<h1>☆</h1>
+
+<p>
+Surpresa!
+
+Volte mais tarde...
+</p>
+`;
+
+}
+
+function verificarSenha(){
+
+const senha =
+document.getElementById("senha").value;
+
+if(senha === "SENHASECRETA"){
+
+window.location.href =
+"presente.html";
+
+}else{
+
+document.getElementById("resultado")
+.innerHTML =
+"Senha incorreta.";
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
