@@ -9,18 +9,42 @@
 <title>?</title>
 
 <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
+<div class="menu-icon" onclick="toggleMenu()">☆</div>
+
+<div id="menu" class="menu">
+<a href="index.html">Início</a>
+<a href="poemas.html">Poemas</a>
+<a href="mensagens.html">Mensagens</a>
+<a href="interativo.html">Interativo</a>
+<a href="aniversario.html">?</a>
+</div>
+
 <div id="conteudo"></div>
 
 <script>
 
+function toggleMenu() {
+  var menu = document.getElementById("menu");
+
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
+}
+
 const agora = new Date();
 
-const liberado = true;
+const liberado =
+agora.getDate() === 10 &&
+agora.getMonth() === 5;
+
 const conteudo =
 document.getElementById("conteudo");
 
@@ -30,7 +54,7 @@ conteudo.innerHTML = `
 <h1>☆</h1>
 
 <p>
-Qual a minha palavra favorita?.
+Qual a minha palavra favorita?
 (dica: foi dita em call)
 </p>
 
@@ -60,7 +84,7 @@ function verificarSenha(){
 const senha =
 document.getElementById("senha").value;
 
-if(senha === "pipi"){
+if(senha.toLowerCase() === "pipi"){
 
 window.location.href =
 "presente.html";
