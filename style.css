@@ -237,9 +237,27 @@ line-height: 1.8;
 
 .pagina-aniversario{
 text-align:center;
-font-size:28px;
 line-height:1.8;
 padding:20px;
+}
+
+.pagina-aniversario p{
+font-size:36px;
+}
+
+.pagina-aniversario h1{
+font-size:48px;
+}
+
+.pagina-aniversario input{
+font-size:30px;
+padding:10px;
+}
+
+.pagina-aniversario button{
+font-size:28px;
+padding:10px 20px;
+
 }
 #resultado{
 color:#ff8fb1;
