@@ -58,7 +58,11 @@ Qual a minha palavra favorita?
 (dica: foi dita em call)
 </p>
 
-<input type="password" id="senha">
+<input
+type="password"
+id="senha"
+oninput="limparMensagem()"
+>
 
 <button onclick="verificarSenha()">
 Entrar
@@ -78,7 +82,11 @@ Surpresa! Volte mais tarde.
 `;
 
 }
+function limparMensagem(){
 
+document.getElementById("resultado").innerHTML = "";
+
+}
 function verificarSenha(){
 
 const senha =
