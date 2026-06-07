@@ -33,7 +33,8 @@ conteudo.innerHTML = `
 <h1>☆</h1>
 
 <p>
-Digite a senha para acessar sua surpresa.
+Qual a minha palavra favorita?.
+(dica: foi dita em call)
 </p>
 
 <input type="password" id="senha">
@@ -51,9 +52,7 @@ conteudo.innerHTML = `
 <h1>☆</h1>
 
 <p>
-Surpresa!
-
-Volte mais tarde...
+Surpresa! Volte mais tarde.
 </p>
 `;
 
@@ -64,7 +63,7 @@ function verificarSenha(){
 const senha =
 document.getElementById("senha").value;
 
-if(senha === "SENHASECRETA"){
+if(senha === "pipi"){
 
 window.location.href =
 "presente.html";
@@ -73,7 +72,7 @@ window.location.href =
 
 document.getElementById("resultado")
 .innerHTML =
-"Senha incorreta.";
+"você claramente não é minha namorada.";
 
 }
 
