@@ -285,7 +285,22 @@ to{
 opacity:1;
 transform:translateY(0px);
 }
+#stars div{
+z-index:-1;
+color:#ffb6d9;
+}
 
+@keyframes fall{
+
+from{
+transform:translateY(-50px);
+}
+
+to{
+transform:translateY(110vh);
+}
+
+}
 }
 }
 
