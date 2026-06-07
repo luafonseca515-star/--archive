@@ -12,9 +12,57 @@
 <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
 </head>
+<script>
 
+const estrelas = [
+"⭐",
+"✦",
+"✧",
+"✨"
+];
+
+const fundo =
+document.getElementById("stars-aniversario");
+
+for(let i = 0; i < 50; i++){
+
+const estrela =
+document.createElement("div");
+
+estrela.innerHTML =
+estrelas[
+Math.floor(
+Math.random() * estrelas.length
+)
+];
+
+estrela.style.position = "fixed";
+
+estrela.style.left =
+Math.random() * 100 + "vw";
+
+estrela.style.top = "-20px";
+
+estrela.style.fontSize =
+(Math.random() * 14 + 12) + "px";
+
+estrela.style.animation =
+`fall ${Math.random() * 6 + 6}s linear infinite`;
+
+estrela.style.animationDelay =
+Math.random() * 6 + "s";
+
+estrela.style.pointerEvents =
+"none";
+
+fundo.appendChild(estrela);
+
+}
+
+</script>
+  
 <body>
-
+<div id="stars-aniversario"></div>
 <div class="menu-icon" onclick="toggleMenu()">☆</div>
 
 <div id="menu" class="menu">
