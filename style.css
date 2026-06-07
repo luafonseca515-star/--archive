@@ -234,3 +234,36 @@ text-align: center;
 margin: 40px;
 line-height: 1.8;
 }
+
+.pagina-aniversario{
+text-align:center;
+font-size:28px;
+line-height:1.8;
+padding:20px;
+}
+#resultado{
+margin-top:25px;
+}
+#resultado{
+color:#ff8fb1;
+margin-top:25px;
+}
+@keyframes flutuar{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-5px);
+}
+
+100%{
+transform:translateY(0px);
+}
+#resultado{
+color:#ff8fb1;
+margin-top:25px;
+animation:flutuar 2s ease-in-out infinite;
+}
+}
