@@ -15,41 +15,36 @@
 
 <script>
 
-const stars = document.getElementById("stars");
+const starsContainer = document.getElementById("stars");
 
-for(let i = 0; i < 30; i++){
+const estrelas = ["★","✦","✧","⋆","☆"];
 
-const star =
-document.createElement("div");
+for(let i=0; i<40; i++){
 
-star.innerHTML = "⭐";
+let star = document.createElement("div");
 
-star.style.position = "fixed";
+star.classList.add("star");
+
+star.innerHTML =
+estrelas[Math.floor(Math.random()*estrelas.length)];
 
 star.style.left =
-Math.random() * 100 + "vw";
-
-star.style.top = "-20px";
+Math.random()*100 + "vw";
 
 star.style.fontSize =
-(Math.random() * 12 + 10) + "px";
+(10 + Math.random()*20) + "px";
 
-star.style.animation =
-`fall ${Math.random() * 5 + 5}s linear infinite`;
+star.style.animationDuration =
+(4 + Math.random()*6) + "s";
 
-star.style.animationDelay =
-Math.random() * 5 + "s";
-
-star.style.pointerEvents =
-"none";
-
-stars.appendChild(star);
+starsContainer.appendChild(star);
 
 }
 
-</script>  
+</script>
+  
 <body>
-<div id="stars"></div>
+<div class="stars" id="stars"></div>
 <div class="menu-icon" onclick="toggleMenu()">☆</div>
 
 <div id="menu" class="menu">
