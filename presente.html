@@ -14,38 +14,10 @@
 
 </head>
 
-<script>
-
-const starsContainer = document.getElementById("stars");
-
-const estrelas = ["⭐","✦","✧","✨","☆"];
-
-for(let i=0; i<40; i++){
-
-let star = document.createElement("div");
-
-star.classList.add("star");
-
-star.innerHTML =
-estrelas[Math.floor(Math.random()*estrelas.length)];
-
-star.style.left =
-Math.random()*100 + "vw";
-
-star.style.fontSize =
-(10 + Math.random()*20) + "px";
-
-star.style.animationDuration =
-(4 + Math.random()*6) + "s";
-
-starsContainer.appendChild(star);
-
-}
-
-</script>
-  
 <body>
+
 <div class="stars" id="stars"></div>
+
 <div class="menu-icon" onclick="toggleMenu()">☆</div>
 
 <div id="menu" class="menu">
@@ -58,7 +30,7 @@ starsContainer.appendChild(star);
 
 <div class="pagina-aniversario">
 
-<h1>feliz aniversário</h1>
+<h1>feliz aniversário ♡</h1>
 
 <p>
 essa página ainda está em construção...
@@ -82,6 +54,37 @@ menu.style.display = "none";
 menu.style.display = "block";
 
 }
+
+}
+
+/* estrelas especiais */
+
+const starsContainer =
+document.getElementById("stars");
+
+const estrelas =
+["⭐","✦","✧","✨","☆"];
+
+for(let i=0; i<50; i++){
+
+let star =
+document.createElement("div");
+
+star.classList.add("star");
+
+star.innerHTML =
+estrelas[Math.floor(Math.random()*estrelas.length)];
+
+star.style.left =
+Math.random()*100 + "vw";
+
+star.style.fontSize =
+(12 + Math.random()*25) + "px";
+
+star.style.animationDuration =
+(3 + Math.random()*5) + "s";
+
+starsContainer.appendChild(star);
 
 }
 
