@@ -6,63 +6,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=0.5">
 
-<title>Feliz Aniversário</title>
+<title>Feliz Aniversário!</title>
 
 <link rel="stylesheet" href="style.css">
+
 <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
 </head>
-<script>
 
-const estrelas = [
-"⭐",
-"✦",
-"✧",
-"✨"
-];
-
-const fundo =
-document.getElementById("stars-aniversario");
-
-for(let i = 0; i < 50; i++){
-
-const estrela =
-document.createElement("div");
-
-estrela.innerHTML =
-estrelas[
-Math.floor(
-Math.random() * estrelas.length
-)
-];
-
-estrela.style.position = "fixed";
-
-estrela.style.left =
-Math.random() * 100 + "vw";
-
-estrela.style.top = "-20px";
-
-estrela.style.fontSize =
-(Math.random() * 14 + 12) + "px";
-
-estrela.style.animation =
-`fall ${Math.random() * 6 + 6}s linear infinite`;
-
-estrela.style.animationDelay =
-Math.random() * 6 + "s";
-
-estrela.style.pointerEvents =
-"none";
-
-fundo.appendChild(estrela);
-
-}
-
-</script>
-  
 <body>
-<div id="stars-aniversario"></div>
+
 <div class="menu-icon" onclick="toggleMenu()">☆</div>
 
 <div id="menu" class="menu">
@@ -74,23 +27,32 @@ fundo.appendChild(estrela);
 </div>
 
 <div class="pagina-aniversario">
-  
-<h1>feliz aniversário ♡</h1>
+
+<h1>feliz aniversário</h1>
 
 <p>
-essa página ainda está em construção.
+essa página ainda está em construção...
 </p>
+
+</div>
 
 <script>
 
-function toggleMenu() {
-  var menu = document.getElementById("menu");
+function toggleMenu(){
 
-  if (menu.style.display === "block") {
-    menu.style.display = "none";
-  } else {
-    menu.style.display = "block";
-  }
+var menu =
+document.getElementById("menu");
+
+if(menu.style.display === "block"){
+
+menu.style.display = "none";
+
+}else{
+
+menu.style.display = "block";
+
+}
+
 }
 
 </script>
