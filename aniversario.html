@@ -9,41 +9,15 @@
 <title>?</title>
 
 <link rel="stylesheet" href="style.css">
+
 <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
 </head>
-<script>
 
-<script>
-const starsContainer = document.getElementById("stars");
-
-const estrelas = ["★","✦","✧","⋆","☆"];
-
-for(let i=0; i<40; i++){
-
-let star = document.createElement("div");
-
-star.classList.add("star");
-
-star.innerHTML =
-estrelas[Math.floor(Math.random()*estrelas.length)];
-
-star.style.left =
-Math.random()*100 + "vw";
-
-star.style.fontSize =
-(10 + Math.random()*20) + "px";
-
-star.style.animationDuration =
-(4 + Math.random()*6) + "s";
-
-starsContainer.appendChild(star);
-}
-
-</script>
-  
 <body>
+
 <div class="stars" id="stars"></div>
+
 <div class="menu-icon" onclick="toggleMenu()">☆</div>
 
 <div id="menu" class="menu">
@@ -53,25 +27,30 @@ starsContainer.appendChild(star);
 <a href="interativo.html">Interativo</a>
 <a href="aniversario.html">?</a>
 </div>
+
 <div id="conteudo" class="pagina-aniversario"></div>
 
 <script>
 
-function toggleMenu() {
-  var menu = document.getElementById("menu");
+function toggleMenu(){
 
-  if (menu.style.display === "block") {
-    menu.style.display = "none";
-  } else {
-    menu.style.display = "block";
-  }
+var menu = document.getElementById("menu");
+
+if(menu.style.display === "block"){
+
+menu.style.display = "none";
+
+}else{
+
+menu.style.display = "block";
+
+}
+
 }
 
 const agora = new Date();
 
-const liberado = true
-agora.getDate() === 10 &&
-agora.getMonth() === 5;
+const liberado = true;
 
 const conteudo =
 document.getElementById("conteudo");
@@ -83,6 +62,7 @@ conteudo.innerHTML = `
 
 <p>
 Qual a minha palavra favorita?
+<br>
 (dica: foi dita em call)
 </p>
 
@@ -91,6 +71,8 @@ type="password"
 id="senha"
 oninput="limparMensagem()"
 >
+
+<br><br>
 
 <button onclick="verificarSenha()">
 Entrar
@@ -110,11 +92,18 @@ Surpresa! Volte mais tarde.
 `;
 
 }
+
 function limparMensagem(){
 
-document.getElementById("resultado").innerHTML = "";
+const resultado =
+document.getElementById("resultado");
+
+if(resultado){
+resultado.innerHTML = "";
+}
 
 }
+
 function verificarSenha(){
 
 const senha =
@@ -127,11 +116,45 @@ window.location.href =
 
 }else{
 
-document.getElementById("resultado")
-.innerHTML =
+document.getElementById("resultado").innerHTML =
 "<span class='erro-senha'>Você claramente não é minha namorada</span>";
+
+}
+
+}
+
+/* ESTRELAS */
+
+const starsContainer =
+document.getElementById("stars");
+
+const estrelas =
+["★","✦","✧","⋆","☆"];
+
+for(let i=0; i<40; i++){
+
+let star =
+document.createElement("div");
+
+star.classList.add("star");
+
+star.innerHTML =
+estrelas[Math.floor(Math.random()*estrelas.length)];
+
+star.style.left =
+Math.random()*100 + "vw";
+
+star.style.fontSize =
+(10 + Math.random()*20) + "px";
+
+star.style.animationDuration =
+(4 + Math.random()*6) + "s";
+
+starsContainer.appendChild(star);
+
 }
 
 </script>
+
 </body>
 </html>
